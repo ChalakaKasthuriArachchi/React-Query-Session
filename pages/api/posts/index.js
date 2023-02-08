@@ -22,6 +22,7 @@ export default async (req, res) => {
 }
 
 async function GET(req, res) {
+  //await sleep(3000)
   const {
     query: { pageOffset, pageSize },
   } = req
