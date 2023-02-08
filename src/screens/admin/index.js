@@ -13,7 +13,6 @@ export default function Posts() {
 
   const onSubmit = async (values) => {
     await createPost(values)
-    postsQuery.fetch()
   }
 
   return (
