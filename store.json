@@ -1,42 +1,42 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "The Importance of Exercise for a Healthy Lifestyle",
       "body": "Exercise is a crucial aspect of leading a healthy lifestyle. Regular physical activity has numerous benefits for both the body and mind, including reducing the risk of chronic diseases, improving mood and cognitive function, and maintaining a healthy weight. Whether it's hitting the gym, going for a jog, or simply taking a walk around the block, incorporating physical activity into your daily routine is essential for maintaining good health. So why not start today and see the difference it makes to your life!"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "5 Simple Tips for Eating Healthy on a Budget",
       "body": "Eating a healthy diet doesn't have to be expensive. With a little planning and creativity, you can enjoy nutritious meals without breaking the bank. Here are 5 simple tips to help you eat healthy on a budget: 1) Plan your meals and snacks in advance, 2) buy in-season produce, 3) buy generic or store-brand items, 4) cook at home instead of eating out, and 5) buy bulk items when possible. By following these tips, you'll be able to save money and still eat well!"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "The Benefits of Meditation for Stress Management",
       "body": "Meditation is a powerful tool for managing stress and promoting overall well-being. Regular meditation practice has been shown to reduce anxiety, improve mood, and increase feelings of calm and relaxation. It can also help you gain greater awareness and insight into your thoughts and emotions, which can lead to improved decision making and enhanced relationships. Whether you're a beginner or an experienced practitioner, incorporating meditation into your daily routine is a great way to manage stress and improve your overall health and happiness."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "The Benefits of a Good Night's Sleep",
       "body": "Getting a good night's sleep is essential for good health and well-being. Sleep allows the body to rest and recover, helps to improve memory and concentration, and can boost the immune system. It's also crucial for regulating mood and managing stress. To get the best quality sleep, it's recommended to establish a consistent sleep schedule, create a relaxing bedtime routine, and avoid caffeine and electronic devices before bedtime. Make sure you're getting enough sleep each night, and you'll feel the benefits in no time!"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "5 Tips for Staying Productive While Working from Home",
       "body": "Working from home can offer increased flexibility and comfort, but it can also be challenging to maintain productivity. Here are 5 tips to help you stay focused and get the most out of your workday: 1) Create a designated workspace, 2) stick to a schedule, 3) take breaks and step away from the screen, 4) minimize distractions, and 5) set achievable goals. By following these tips, you can stay productive and enjoy the benefits of working from home!"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "The Benefits of Mindfulness for Mental Health",
       "body": "Mindfulness is a powerful tool for improving mental health and well-being. It involves paying attention to the present moment, without judgment, and can help to reduce stress, anxiety, and depression. Practicing mindfulness can also increase feelings of happiness and self-awareness, and improve relationships and decision making. Whether through meditation, deep breathing, or simply paying attention to your thoughts and surroundings, incorporating mindfulness into your daily routine can have a positive impact on your mental health."
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "5 Simple Ways to Live a More Sustainable Lifestyle",
       "body": "Living a more sustainable lifestyle is easier than you might think. By making a few simple changes, you can reduce your impact on the environment and help to create a better future for the planet. Here are 5 easy ways to get started: 1) reduce energy consumption, 2) recycle and compost, 3) use reusable bags and water bottles, 4) buy locally-sourced, organic products, and 5) use public transportation or carpool. Start making these changes today and you'll be making a positive impact on the environment in no time!"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "The Benefits of Reading for Personal Growth and Development",
       "body": "Reading is a powerful tool for personal growth and development. Whether it's a novel, a biography, or a self-help book, reading allows you to expand your knowledge, improve your vocabulary, and gain new perspectives on the world. It can also help to reduce stress, increase empathy, and boost creativity. Make reading a habit by setting aside time each day, and you'll see the benefits to your personal growth and development in no time!"
     }
