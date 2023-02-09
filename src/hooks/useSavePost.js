@@ -1,22 +1,24 @@
 import React from 'react'
 import axios from 'axios'
+import {queryCache, useMutation} from "react-query";
 
 export default function useSavePost() {
-  const [state, setState] = React.useReducer((_, action) => action, {
-    isIdle: true,
-  })
-
-  const mutate = React.useCallback(async (values) => {
-    setState({ isLoading: true })
-    try {
-      const data = await axios
-        .patch(`/api/posts/${values.id}`, values)
-        .then((res) => res.data)
-      setState({ isSuccess: true, data })
-    } catch (error) {
-      setState({ isError: true, error })
-    }
-  }, [])
-
-  return [mutate, state]
+  return useMutation((newPost) => axios.patch(`/api/posts/${newPost.id}`, newPost),
+      {
+          onMutate: (newPost) => {
+              const oldPost = queryCache.getQueryData(['posts', newPost.id])
+              queryCache.setQueryData(['posts', newPost.id], newPost)
+              return oldPost;
+          },
+          onSuccess: (updatedPost) => {
+              queryCache.setQueryData(['posts', updatedPost.id], updatedPost)
+          },
+          onError: (error, newPost, oldPost) => {
+              queryCache.setQueryData(['posts', newPost.id], oldPost)
+          },
+          onSettled: () => {
+              queryCache.invalidateQueries('posts')
+          }
+      }
+  )
 }
