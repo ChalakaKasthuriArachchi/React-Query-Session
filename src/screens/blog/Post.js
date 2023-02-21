@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 //
 
 import usePost from '../../hooks/usePost'
+import {StyledP, StyledSpan} from "../../components/styled";
 
 export default function Post() {
   const { postId } = useParams()
@@ -12,13 +13,13 @@ export default function Post() {
   return (
     <>
       {postQuery.isLoading ? (
-        <span>Loading...</span>
+        <StyledSpan>Loading...</StyledSpan>
       ) : postQuery.isError ? (
         postQuery.error.message
       ) : (
         <div>
-          <h2>{postQuery.data.title}</h2>
-          <p>{postQuery.data.body}</p>
+          <h1>{postQuery.data.title}</h1>
+          <StyledP>{postQuery.data.body}</StyledP>
         </div>
       )}
     </>

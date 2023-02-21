@@ -34,10 +34,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"
-          />
+          <title>Pagero React Demo</title>
         </Head>
         <body>
           <Main suppresHydrationWarning />
