@@ -8,7 +8,7 @@ import useSavePost from '../../hooks/useSavePost'
 import useDeletePost from '../../hooks/useDeletePost'
 
 import PostForm from '../../components/PostForm'
-import { Loader } from '../../components/styled'
+import {Loader, StyledP, StyledSpan} from '../../components/styled'
 
 export default function Post() {
   const { postId } = useParams()
@@ -31,15 +31,15 @@ export default function Post() {
   return (
     <>
       {postQuery.isLoading ? (
-        <span>
+        <StyledSpan>
           <Loader /> Loading...
-        </span>
+        </StyledSpan>
       ) : (
         <div>
-          <h3>{postQuery.data.title}</h3>
-          <p>
+          <h1>{postQuery.data.title}</h1>
+          <StyledP>
             <Link to={`/blog/${postQuery.data.id}`}>View Post</Link>
-          </p>
+          </StyledP>
           <PostForm
             initialValues={postQuery.data}
             onSubmit={onSubmit}
@@ -54,17 +54,15 @@ export default function Post() {
             }
           />
 
-          <p>
-            <button onClick={onDelete}>
-              {deletePostInfo.isLoading
+          <button hidden={true} onClick={onDelete}>
+            {deletePostInfo.isLoading
                 ? 'Deleting...'
                 : deletePostInfo.isError
-                ? 'Error!'
-                : deletePostInfo.isSuccess
-                ? 'Deleted!'
-                : 'Delete Post'}
-            </button>
-          </p>
+                    ? 'Error!'
+                    : deletePostInfo.isSuccess
+                        ? 'Deleted!'
+                        : 'Delete Post'}
+          </button>
         </div>
       )}
     </>

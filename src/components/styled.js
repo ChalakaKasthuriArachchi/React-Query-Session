@@ -11,11 +11,28 @@ export const SidebarStyles = styled.div`
   width: 175px;
   border-right: 1px solid black;
   padding: 1rem;
+  font-size: 25px;
 `
 
 export const Main = styled.div`
   flex: 1;
   padding: 1rem;
+`
+export const StyledButton = styled.button`
+  height: 45px;
+  width: 125px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+`
+
+export const StyledP = styled.p`
+  font-size: 20px;
+`
+
+export const StyledSpan = styled.span`
+  font-weight: normal; 
+  font-size: 20px;
 `
 
 export const PostStyles = styled.div`

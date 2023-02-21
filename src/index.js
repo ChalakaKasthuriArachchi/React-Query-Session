@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //
 
-import { Wrapper, Main } from './components/styled'
+import {Wrapper, Main, ButtonStyles} from './components/styled'
 import Sidebar from './components/Sidebar'
 
 import Admin from './screens/admin'

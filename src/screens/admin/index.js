@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import PostForm from '../../components/PostForm'
-import { Loader } from '../../components/styled'
+import {Loader, StyledSpan} from '../../components/styled'
 
 import usePosts from '../../hooks/usePosts'
 import useCreatePost from '../../hooks/useCreatePost'
@@ -21,15 +21,15 @@ export default function Posts() {
       <div>
         <div>
           {postsQuery.isLoading ? (
-            <span>
+            <StyledSpan>
               <Loader /> Loading
-            </span>
+            </StyledSpan>
           ) : (
             <>
-              <h3>Posts</h3>
+              <h1>Posts</h1>
               <ul>
                 {postsQuery.data.map((post) => (
-                  <li key={post.id}>
+                  <li key={post.id} style={{fontSize: '30px'}}>
                     <Link to={`./${post.id}`}>{post.title}</Link>
                   </li>
                 ))}
@@ -41,7 +41,7 @@ export default function Posts() {
       </div>
       <hr />
       <div>
-        <h3>Create New Post</h3>
+        <h2>Create New Post</h2>
         <div>
           <PostForm
             onSubmit={onSubmit}

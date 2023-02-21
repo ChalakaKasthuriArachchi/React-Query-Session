@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 //
 import usePosts from '../../hooks/usePosts'
-import { PostStyles } from '../../components/styled'
+import {PostStyles, StyledP, StyledSpan} from '../../components/styled'
 
 export default function Home() {
   const postsQuery = usePosts()
@@ -19,14 +19,14 @@ export default function Home() {
         `}
       >
         {postsQuery.isLoading ? (
-          <span>Loading...</span>
+          <StyledSpan>Loading...</StyledSpan>
         ) : postsQuery.isError ? (
           postsQuery.error.message
         ) : (
           postsQuery.data.map((post) => (
             <PostStyles as={Link} to={`./${post.id}`} key={post.id}>
-              <h3>{post.title}</h3>
-              <p>{post.body}</p>
+              <h2>{post.title}</h2>
+              <StyledP>{post.body}</StyledP>
             </PostStyles>
           ))
         )}
